@@ -24,7 +24,7 @@ connectDB();
 
 app.get('/', (req, res) => {
   res.json({
-    message: `Welcome to Expense Tracker API`
+    message: `Welcome.... Store Your Secrets Here!`
   })
 })
 
