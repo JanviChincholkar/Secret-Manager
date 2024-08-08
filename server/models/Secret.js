@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose"
 
-const userSchema = new Schema({
+const secretSchema = new Schema({
     title: {
         type: String,
         required: true
@@ -15,7 +15,7 @@ const userSchema = new Schema({
     enum : ["personal", "professional"],
     }*/
    
-      user:{
+    user:{
         type: Schema.Types.ObjectId,
         ref: "User",
         required: true,

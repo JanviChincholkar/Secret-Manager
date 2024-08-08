@@ -8,7 +8,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+import { postSignup, postLogin } from './controllers/user.js';
 
+import { postSecret, getSecrets, deleteSecret} from './controllers/secret.js'
 
 
 // Connect to MongoDB
@@ -28,6 +30,12 @@ app.get('/', (req, res) => {
   })
 })
 
+app.post("/signup", postSignup)
+app.post("/login", postLogin)
+
+app.post("/secret", postSecret)
+app.get("/secrets", getSecrets)
+app.delete("/secrets/:id", deleteSecret)
 
 const PORT = process.env.PORT || 5000;
 
