@@ -31,16 +31,26 @@ const postSecret = async (req, res) => {
 
 
 const getSecrets = async (req, res) => {
-   
-const secret = await Secret.find().sort({ createdAt: -1 })
-
+    const { userId } = req.query;
+  
+    const user = await User.findById(userId)
+  
+    if(!user){
+      return res.json({
+        success: false,
+        message: `User not found`,
+        data: null
+      })
+    }
+  
+    const secrets   = await Secret.find({ user: userId }).sort({ createdAt: -1});
+  
     res.json({
-        success: true,
-        message: `Secret Fetched Successfully`,
-        data: Secret
+      success: true,
+      message: `Secrets Fetched successfully`,
+      data: secrets
     })
-}
-
+  }
 
 const putSecret = async (req, res) => {
     const {
