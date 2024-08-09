@@ -83,7 +83,7 @@ const deleteSecret = async (req, res) => {
 
     return res.json({
         success: true,
-        message: `Secret Deleted Successfully`,
+        message: `Text Deleted Successfully`,
         data: null
     })
 }

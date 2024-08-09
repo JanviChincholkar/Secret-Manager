@@ -35,7 +35,7 @@ app.post("/login", postLogin)
 
 app.post("/secret", postSecret)
 app.get("/secrets", getSecrets)
-app.delete("/secrets/:id", deleteSecret)
+app.delete("/secret/:id", deleteSecret)
 
 const PORT = process.env.PORT || 5000;
 
