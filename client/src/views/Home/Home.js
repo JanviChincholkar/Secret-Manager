@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 function Home() {
   const [user, setUser] = useState('')
   const [secrets, setSecrets] = useState([])
+  
   useEffect(() => {
     const currentUser = JSON.parse(localStorage.getItem('currentUser'))
 
