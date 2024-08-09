@@ -2,6 +2,7 @@ import axios from "axios"
 import "./AddSecret.css"
 import { useState, useEffect } from 'react'
 import toast, {Toaster} from "react-hot-toast"
+import ImgIcon from './../../views/icon.png'
 
 function AddSecret() {
 
@@ -14,13 +15,11 @@ function AddSecret() {
     
         if(currentUser){
           setUser(currentUser)
-        }
-    
+        }   
         if(!currentUser){
           window.location.href = '/login'
         }
       }, [])
-
 
       const addSecret = async () => {
         const response = await axios.post(`${process.env.REACT_APP_API_URL}/secret`, {
@@ -28,25 +27,22 @@ function AddSecret() {
          description,
           user: user._id
         })
-
         toast.success(response.data.message)
 
         setTitle('')
         setDescription()
 
-    
         setTimeout(() => {
           window.location.href = '/'
         }, 2000)
       }
 
-
   return (
-   
     <div>
-      <h1 className="auth-heading"> Add Your Text...</h1>
+      <h1 className="auth-heading padding"> Add Your Text...</h1>
 
 <form className="auth-form">
+<img src={ImgIcon}  className='icon'/>
     <input 
     type="text"
     placeholder="Title"
@@ -63,10 +59,7 @@ function AddSecret() {
 
     <button type="button" className="btn-auth" onClick={addSecret}> Add Text To My Secret List</button>
 </form>
-
-
-
-    </div>
+ </div>
   )
 }
 

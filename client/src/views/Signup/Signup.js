@@ -3,6 +3,7 @@ import './Signup.css'
 import axios from 'axios'
 import toast, {Toaster} from 'react-hot-toast'
 import { Link } from 'react-router-dom'
+import ImgIcon from './../../views/icon.png'
 
 function Signup() {
 
@@ -36,12 +37,12 @@ function Signup() {
     }
   }
 
-
   return (
     <div>
       <h1 className='auth-heading'>Sign Up Here!</h1>
 
       <form className='auth-form'>
+      <img src={ImgIcon}  className='icon'/>
         <input
           type="text"
           placeholder="Fullname"

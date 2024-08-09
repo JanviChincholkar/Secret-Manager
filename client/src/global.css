@@ -1,6 +1,5 @@
 body{
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
-
   }
 
 .user-input {
@@ -15,7 +14,7 @@ body{
 
 .user-input:focus, .user-input:active {
     outline: none;
-    border-color: #0033cc;
+    border-color: #4d004d;
     box-shadow: 0 0 5px rgba(0, 51, 204, 0.5);
 }
 
@@ -34,6 +33,7 @@ body{
     margin: 0 auto;
     border-radius: 5px;
     background-color:white;
+    position: relative;
 }
 
 .btn-auth {
@@ -47,7 +47,6 @@ body{
     margin: 20px auto;
     font-size: 16px;
 }
-
 .btn-auth:hover {
     transition: 0.3s;
     border: 2px solid #4d004d;
@@ -66,4 +65,11 @@ body{
 
 .auth-link:hover {
     text-decoration: underline;
+}
+
+.icon{
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 40%;
 }

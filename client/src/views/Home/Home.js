@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 function Home() {
   const [user, setUser] = useState('')
   const [secrets, setSecrets] = useState([])
-  
+
   useEffect(() => {
     const currentUser = JSON.parse(localStorage.getItem('currentUser'))
 
@@ -37,11 +37,6 @@ function Home() {
     loadSecrets()
   })
 
-
-
-
-
-
   return (
     <div>
      <h1 className='home-greeting'>Hello {user.fullName}!</h1>
@@ -57,8 +52,6 @@ function Home() {
       }}>
         Logout
       </span>
-
-
 {
   secrets.map((secret) => {
     const  { _id, title, description, createdAt, loadSecrets } = secret  

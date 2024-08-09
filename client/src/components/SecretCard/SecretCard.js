@@ -11,21 +11,17 @@ const deleteSecret = async () => {
   loadSecrets()
 }
 
-return (<div className="main">
+return (
     <div className="card-container"> 
     <h1 className="title"> {title} </h1>
-    <div> 
+    <div>
     <span className="timing">  {createdAt}  </span>
-       </div>
-
+   </div>
     <span className="description">{description}</span>
     
 <img src={Imgdelete} className="delete-img" onClick={deleteSecret}/>
 <Toaster/>
        </div>
-       </div>
-
-
 )
 }
 

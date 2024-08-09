@@ -3,6 +3,7 @@ import "./Login.css"
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import toast, {Toaster} from 'react-hot-toast'
+import ImgIcon from './../../views/icon.png'
 
 function Login() {
   const [email, setEmail] = useState('')
@@ -32,7 +33,10 @@ function Login() {
     <div>
       <h1 className='auth-heading'>User Login !</h1>
 
+
       <form className='auth-form'>
+      <img src={ImgIcon}  className='icon'/>
+
         <input
           type='email'
           placeholder='Email'

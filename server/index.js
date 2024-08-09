@@ -9,7 +9,6 @@ app.use(express.json());
 app.use(cors());
 
 import { postSignup, postLogin } from './controllers/user.js';
-
 import { postSecret, getSecrets, deleteSecret} from './controllers/secret.js'
 
 
@@ -22,7 +21,6 @@ const connectDB = async () =>{
   }
 };
 connectDB();
-
 
 app.get('/', (req, res) => {
   res.json({
