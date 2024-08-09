@@ -1,21 +1,43 @@
+
 .home-heading{
-    color: #0084ff;
+  color: white;
     font-size: 35px;
-    margin: 0;
     padding-top: 15x;
+    text-align: center;
+   
   }
 
   .home-greeting{
     font-size: 45px;
-    margin: 0;
+ 
+   text-align: center;
+color: white;
+text-decoration: wavy;
+
   }
 
     
   .home-logout{
+
     position: fixed;
     top: 10px;
     right: 10px;
     cursor: pointer;
     font-size: 25px;
+  }
+
+  .add-text{
+    position: fixed;
+    bottom: 10px;
+    right: 18%;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+  }
+  .add-text:hover{
+    border: 2px double white;
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
   }
   

@@ -30,7 +30,7 @@ function Login() {
 
   return (
     <div>
-      <h1 className='auth-heading'>User Login</h1>
+      <h1 className='auth-heading'>User Login !</h1>
 
       <form className='auth-form'>
         <input
@@ -53,7 +53,7 @@ function Login() {
           type='button'
           onClick={loginNow}
           className='btn-auth'>
-          Login
+          Login Now
         </button>
       </form>
 

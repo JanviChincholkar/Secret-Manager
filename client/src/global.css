@@ -1,9 +1,14 @@
+body{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+
+  }
+
 .user-input {
     display: block;
     margin: 15px auto;
     padding: 10px;
     width: 90%;
-    border: 2px solid #0033cc;
+    border: 2px solid #4d004d;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -16,23 +21,23 @@
 
 .auth-heading {
     text-align: center;
-    color: #0084ff;
-    font-size: 24px;
+    color: white;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
 .auth-form{
     width: 300px;
-    border :  9px double #0084ff;
+    border :  9px double #4d004d;
     padding: 20px;
     display: block;
     margin: 0 auto;
     border-radius: 5px;
-    background-color: black;
+    background-color:white;
 }
 
 .btn-auth {
-    background-color: #0084ff;
+    background-color: #4d004d;
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
@@ -43,9 +48,11 @@
     font-size: 16px;
 }
 
-.btn:hover {
+.btn-auth:hover {
     transition: 0.3s;
-    background-color: #0056b3;
+    border: 2px solid #4d004d;
+    background-color: white;
+    color: #4d004d;
 }
 
 .auth-link {
@@ -54,7 +61,7 @@
     margin-top: 20px;
     font-size: 18px;
     text-decoration: none;
-    color: #0033cc;
+    color: white;
 }
 
 .auth-link:hover {

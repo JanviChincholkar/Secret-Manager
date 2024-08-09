@@ -3,6 +3,7 @@ import"./Home.css"
 import toast, {Toaster} from 'react-hot-toast'
 import axios from 'axios'
 import SecretCard from '../../components/SecretCard/SecretCard'
+import ImgAdd from "./add.png"
 
 function Home() {
   const [user, setUser] = useState('')
@@ -41,8 +42,8 @@ function Home() {
 
   return (
     <div>
-     <h1 className='home-greeting'>Hello {user.fullName}</h1>
-    <h2 className='home-heading'> welcome</h2>
+     <h1 className='home-greeting'>Hello {user.fullName}!</h1>
+    <h2 className='home-heading'> Put Your Personalize Information Here 🤫</h2>
 
     <span className='home-logout' onClick={() => {
         localStorage.clear()
@@ -69,6 +70,8 @@ return (<SecretCard
               loadSecrets={loadSecrets} />)
     })
 }
+
+<img src={ImgAdd} alt='Add Text' className='add-text'/>
 <Toaster/>
     </div>
   )

@@ -3,17 +3,18 @@ import "./SecretCard.css";
 import axios from "axios";
 
 function SecretCard({ _id, title, description, createdAt, loadSecrets }) {
-return (
-    <div className=""> 
-    <h1> {title} </h1>
-
-    <span >{description}</span>
-    
-   <div> <span className="">
-        {createdAt}
-      </span> </div>
+return (<div className="main">
+    <div className="card-container"> 
+    <h1 className="title"> {title} </h1>
+    <div> 
+    <span className="timing">  {createdAt}  </span>
        </div>
 
+    <span className="description">{description}</span>
+    
+
+       </div>
+       </div>
 
 
 )
