@@ -4,6 +4,7 @@ import toast, {Toaster} from 'react-hot-toast'
 import axios from 'axios'
 import SecretCard from '../../components/SecretCard/SecretCard'
 import ImgAdd from "./add.png"
+import { Link } from 'react-router-dom'
 
 function Home() {
   const [user, setUser] = useState('')
@@ -70,8 +71,9 @@ return (<SecretCard
               loadSecrets={loadSecrets} />)
     })
 }
-
+<Link to='/add-secret'>
 <img src={ImgAdd} alt='Add Text' className='add-text'/>
+</Link>
 <Toaster/>
     </div>
   )

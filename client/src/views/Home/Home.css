@@ -13,12 +13,9 @@
    text-align: center;
 color: white;
 text-decoration: wavy;
-
   }
-
-    
+ 
   .home-logout{
-
     position: fixed;
     top: 10px;
     right: 10px;
@@ -35,7 +32,7 @@ text-decoration: wavy;
     cursor: pointer;
   }
   .add-text:hover{
-    border: 2px double white;
+    border: 5px double white;
     height: 80px;
     width: 80px;
     border-radius: 100px;
