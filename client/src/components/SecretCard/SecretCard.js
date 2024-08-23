@@ -16,7 +16,7 @@ return (
     <h1 className="title"> {title} </h1>
     <div>
     <span className="timing">  {createdAt}  </span>
-   </div>
+   </div><br/> <br/>
     <span className="description">{description}</span>
     
 <img src={Imgdelete} className="delete-img" onClick={deleteSecret}/>
